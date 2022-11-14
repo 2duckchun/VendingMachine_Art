@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Art VendingMachine</title>
+</head>
+<body>
+    <header>
+        <h1 class="tit-artmachine ir">아트머신입니다(시맨틱)</h1>
+        <img src="src/img/logo.png" alt="아트 밴딩머신 로고">
+        <p>작은 미술관에 오신 것을 환영합니다.</p>
+        <p>당신이 원하는 아름다운 그림들을 직접 구매해보세요.</p>
+    </header>
+    <main class="cont-main">
+        <section class="cont-artmachine">
+            <div class="cont-carousel">
+                <button class="btn-carousel left">왼쪽버튼</button>
+                <div class="display-carousel">디스플레이</div>
+                <button class="btn-carousel right">오른쪽버튼</button>
+            </div>
+            <div class="cont-buy">
+                <div class="cont-dashboard">
+                    <div class="dashboard-balance">대시보드 발란스<span class="txt-balance">1000원</span></div>
+                    <button class="btn-return">거스름돈 반환</button>
+                    <label for="inp-put" class="ir">입금할 금액을 입력합니다.</label>
+                    <input id="inp-put" class="inp-put" type="number" placeholder="입금액 입력">
+                    <button class="btn-put">입금</button>
+                    <ul class="ul-cart balance">
+                        <li class="li-cart balance">
+                            <img src="src/img/logo.png" alt="장바구니에 담긴 리스트">
+                            <span>아트밴딩머신</span>
+                        </li>
+                    </ul>
+                    <button class="btn-buy">구매</button>
+                </div>
+            </div>
+        </section>
+        <section class="cont-info">
+            <div class="info-mymoney">
+                소지금 :
+                <span class="txt-mymoney">100,000원</span>
+            </div>
+            <h2 class="tit-myart">구매한 작품</h2>
+            <ul class="ul-cart myart">
+                <li class="li-cart myart">
+                    <img src="src/img/logo.png" alt="구매한 작품 리스트">
+                    <span>아트밴딩머신</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>
