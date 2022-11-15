@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style/reset.css">
+    <link rel="stylesheet" href="src/style/style.css">
+
     <title>Art VendingMachine</title>
 </head>
 <body>
@@ -17,18 +19,30 @@
     <main class="cont-main">
         <section class="cont-artmachine">
             <div class="cont-carousel">
-                <button class="btn-carousel left">왼쪽버튼</button>
+                <button class="btn-carousel left"><img src="src/img/arrow.png" alt=""></button>
                 <div class="display-carousel">디스플레이</div>
-                <button class="btn-carousel right">오른쪽버튼</button>
+                <button class="btn-carousel right"><img src="src/img/arrow.png" alt=""></button>
             </div>
             <div class="cont-buy">
                 <div class="cont-dashboard">
-                    <div class="dashboard-balance">대시보드 발란스<span class="txt-balance">1000원</span></div>
+                    <div class="dashboard-balance">잔액<span class="txt-balance">1000원</span></div>
                     <button class="btn-return">거스름돈 반환</button>
                     <label for="inp-put" class="ir">입금할 금액을 입력합니다.</label>
                     <input id="inp-put" class="inp-put" type="number" placeholder="입금액 입력">
                     <button class="btn-put">입금</button>
                     <ul class="ul-cart balance">
+                        <li class="li-cart balance">
+                            <img src="src/img/logo.png" alt="장바구니에 담긴 리스트">
+                            <span>아트밴딩머신</span>
+                        </li>
+                        <li class="li-cart balance">
+                            <img src="src/img/logo.png" alt="장바구니에 담긴 리스트">
+                            <span>아트밴딩머신</span>
+                        </li>
+                        <li class="li-cart balance">
+                            <img src="src/img/logo.png" alt="장바구니에 담긴 리스트">
+                            <span>아트밴딩머신</span>
+                        </li>
                         <li class="li-cart balance">
                             <img src="src/img/logo.png" alt="장바구니에 담긴 리스트">
                             <span>아트밴딩머신</span>
