@@ -25,7 +25,7 @@ header img {
   width: 200px;
   border: 5px inset #5C6E91;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  background-color: rgb(239, 237, 234);
+  background-color: #EEEDED;
 }
 .cont-artmachine .cont-carousel .btn-carousel {
   position: absolute;
@@ -60,7 +60,7 @@ header img {
 .cont-artmachine .cont-buy .cont-dashboard .dashboard-balance {
   background-color: #5C6E91;
   border-radius: 5px;
-  color: white;
+  color: #fff;
   font-family: "GmarketSansMedium";
   display: flex;
   align-items: center;
@@ -69,9 +69,9 @@ header img {
 }
 .cont-artmachine .cont-buy .cont-dashboard .btn-return,
 .cont-artmachine .cont-buy .cont-dashboard .btn-put {
-  border-radius: 5px;
-  color: black;
   font-family: "GmarketSansMedium";
+  border-radius: 5px;
+  color: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,22 +79,22 @@ header img {
   background-color: transparent;
 }
 .cont-artmachine .cont-buy .cont-dashboard .inp-put {
-  background-color: transparent;
   border-radius: 5px;
-  color: black;
-  font-family: "GmarketSansMedium";
+  color: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid black;
+  background-color: transparent;
   padding: 0 15px;
+  font-family: "GmarketSansMedium";
 }
 .cont-artmachine .cont-buy .btn-buy {
   background-color: #3B5883;
   border-radius: 5px;
   font-size: 20px;
   cursor: pointer;
-  color: white;
+  color: #fff;
   font-family: "GmarketSansMedium";
   display: flex;
   align-items: center;
@@ -109,8 +109,8 @@ header img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #5c6291;
-  color: white;
+  background-color: #5C6E91;
+  color: #fff;
   margin: 15px 0;
   padding: 15px 25px;
   border-radius: 20px;
@@ -128,7 +128,7 @@ header img {
 }
 .cont-info .ul-cart {
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000000;
   border-radius: 0px;
   margin-top: 25px;
   height: 390px;
@@ -165,9 +165,9 @@ html {
   padding: 10px 8px;
   background-color: transparent;
   border-radius: 5px;
-  color: black;
+  color: #000000;
   font-family: "GmarketSansMedium";
-  border: 1px solid black;
+  border: 1px solid #000000;
   overflow-y: scroll;
 }
 .ul-cart .li-cart {
@@ -183,7 +183,7 @@ html {
   flex-grow: 1;
 }
 .ul-cart .li-cart img {
-  background-color: pink;
+  background-color: #EEEDED;
   height: 60px;
   width: 40px;
 }

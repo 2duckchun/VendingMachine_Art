@@ -5,12 +5,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #5c6291;
-        color:white;
+        background-color: $color-main;
+        color:$color-font-white;
         margin: 15px 0;
         padding: 15px 25px;
         border-radius: 20px;
-        font-family: 'GmarketSansMedium';
+        font-family: $font-mid ;
     }
     .tit-myart{
         background-color: transparent;
@@ -19,12 +19,12 @@
         border-bottom: 1px solid black;
         padding: 15px 0px 10px;
         font-size: 24px;
-        font-family: 'GmarketSansMedium';
+        font-family: $font-mid ;
         line-height: 100%;
     }
     .ul-cart{
         border: none;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid $color-font-black;
         border-radius: 0px;
         margin-top: 25px;
         height: 390px;

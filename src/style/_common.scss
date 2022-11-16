@@ -1,7 +1,7 @@
 // setting
 html {
     box-sizing: border-box;
-    background-color: #EEEDED;
+    background-color: $color-bg;
 }
 *, *::before, *::after {
     box-sizing: inherit;
@@ -28,23 +28,23 @@ html {
     padding: 10px 8px;
     background-color: transparent;
     border-radius: 5px;
-    color: black;
+    color: $color-font-black;
     font-family: 'GmarketSansMedium';
-    border:1px solid black;
+    border:1px solid $color-font-black;
     overflow-y: scroll;
     .li-cart{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-left:10px;
-        background-color: #fff;
+        background-color: $color-font-white;
         height: 70px;
         border-radius: 5px;
         span{
             flex-grow: 1;
         }
         img{
-            background-color: pink;
+            background-color: $color-bg;
             height: 60px;
             width: 40px;
         }
