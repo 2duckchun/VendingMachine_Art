@@ -1,0 +1,55 @@
+// setting
+html {
+    box-sizing: border-box;
+    background-color: #EEEDED;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.ir {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.cont-main {
+    width: 850px;
+    height: 550px;
+    margin: 70px auto;
+    display: flex;
+    gap: 50px;
+}
+
+.ul-cart{
+    padding: 10px 8px;
+    background-color: transparent;
+    border-radius: 5px;
+    color: black;
+    font-family: 'GmarketSansMedium';
+    border:1px solid black;
+    overflow-y: scroll;
+    .li-cart{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left:10px;
+        background-color: #fff;
+        height: 70px;
+        border-radius: 5px;
+        span{
+            flex-grow: 1;
+        }
+        img{
+            background-color: pink;
+            height: 60px;
+            width: 40px;
+        }
+    }
+    li + li{
+        margin-top: 6px;
+    }
+}

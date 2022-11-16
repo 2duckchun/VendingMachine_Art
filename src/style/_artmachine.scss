@@ -1,39 +1,6 @@
-// setting
-html {
-    box-sizing: border-box;
-    background-color: #EEEDED;
-}
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
-.ir {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-}
-
-// header
-header {
-    width: 400px;
-    margin: 0px auto;
-    text-align: center;
-    img {
-        width: 150px;
-    }
-}
-
-.cont-main {
-    width: 850px;
-    height: 550px;
-    margin: 15px auto;
-    display: flex;
-}
 
 .cont-artmachine {
+    
     .cont-carousel {
         position: relative;
         margin: 15px auto;
@@ -63,8 +30,6 @@ header {
             right: 0;
             transform: translateY(-50%) rotateY(180deg);
         }
-        
-
     }
 
     .cont-buy {
@@ -95,7 +60,6 @@ header {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                padding: 0 15px;
                 border:1px solid black;
                 background-color: transparent;
             }
@@ -109,36 +73,6 @@ header {
                 justify-content: center;
                 border:1px solid black;
                 padding: 0 15px;
-            }
-        }
-        .ul-cart{
-            padding: 10px 8px;
-            background-color: transparent;
-            border-radius: 5px;
-            color: black;
-            font-family: 'GmarketSansMedium';
-            border:1px solid black;
-            overflow: scroll;
-            
-            .li-cart{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding-left:10px;
-                background-color: #fff;
-                height: 70px;
-                border-radius: 5px;
-                span{
-                    flex-grow: 1;
-                }
-                img{
-                    background-color: pink;
-                    height: 60px;
-                    width: 40px;
-                }
-            }
-            li + li{
-                margin-top: 6px;
             }
         }
         .btn-buy{

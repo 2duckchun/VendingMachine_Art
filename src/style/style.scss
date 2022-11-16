@@ -3,5 +3,9 @@
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-};
-@import "render";
+}
+
+@import "header";
+@import "artmachine";
+@import "info";
+@import "common";
