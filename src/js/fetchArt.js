@@ -1,11 +1,3 @@
-/*
-
-어싱크 어웨이트
-그리고 fetch <- 기다려줘야함.
-fetch를 받는 건 app.js가 통합해줌....
-
-*/
-
 const fetchArt = async () => {
     const response = await fetch('../art.json')
     let data = null
