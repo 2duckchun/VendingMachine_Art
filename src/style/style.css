@@ -26,6 +26,14 @@ header img {
   border: 5px inset #5C6E91;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   background-color: #EEEDED;
+  display: flex;
+  overflow: hidden;
+}
+.cont-artmachine .cont-carousel .display-carousel .cont-carousel-art {
+  display: flex;
+  height: 100%;
+  background-color: teal;
+  transition: transform 0.3s ease-in-out;
 }
 .cont-artmachine .cont-carousel .btn-carousel {
   position: absolute;

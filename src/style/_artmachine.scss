@@ -10,6 +10,14 @@
             border: 5px inset $color-main;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
             background-color: $color-bg;
+            display: flex;
+            overflow: hidden;
+            .cont-carousel-art {
+                display: flex;
+                height: 100%;
+                background-color: teal;
+                transition: transform 0.3s ease-in-out;
+            }
         }
         .btn-carousel {
             position: absolute;
