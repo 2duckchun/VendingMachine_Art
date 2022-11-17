@@ -13,8 +13,8 @@
             overflow: hidden;
             .cont-carousel-art {
                 display: flex;
+                cursor: pointer;
                 height: 100%;
-                background-color: teal;
                 transition: transform 0.3s ease-in-out;
             }
         }
@@ -61,6 +61,7 @@
             .btn-return,
             .btn-put{
                 font-family: $font-mid;
+                cursor: pointer;
                 @include btn-border;
             }
             .inp-put{

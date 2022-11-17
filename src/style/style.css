@@ -31,8 +31,8 @@ header img {
 }
 .cont-artmachine .cont-carousel .display-carousel .cont-carousel-art {
   display: flex;
+  cursor: pointer;
   height: 100%;
-  background-color: teal;
   transition: transform 0.3s ease-in-out;
 }
 .cont-artmachine .cont-carousel .btn-carousel {
@@ -78,6 +78,7 @@ header img {
 .cont-artmachine .cont-buy .cont-dashboard .btn-return,
 .cont-artmachine .cont-buy .cont-dashboard .btn-put {
   font-family: "GmarketSansMedium";
+  cursor: pointer;
   border-radius: 5px;
   color: #000000;
   display: flex;
@@ -182,6 +183,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
   padding-left: 10px;
   background-color: #fff;
   height: 70px;
