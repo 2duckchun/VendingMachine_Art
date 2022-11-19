@@ -13,8 +13,8 @@ const fetchArt = async () => {
 
     data.forEach(i => {
         const art = document.createElement('img')
-        art.src=`${i.파일위치}`
         art.classList.add('art-carousel')
+        art.src=`${i.파일위치}`
         art.dataset.id =`${i.id}`
         art.dataset.imgurl=`${i.파일위치}`
         art.dataset.price =`${i.가격}`
