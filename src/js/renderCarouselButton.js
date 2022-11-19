@@ -1,11 +1,12 @@
-const renderCarouselButton = () => {
+const renderCarouselButton = (arr) => {
     const leftBtn = document.querySelector('.btn-carousel.left')
     const rightBtn = document.querySelector('.btn-carousel.right')
     const artDisplay = document.querySelector('.cont-carousel-art')
+    // let index = document.querySelectorAll('.art-carousel')
+    let index = arr.length
 
-    let index = document.querySelectorAll('.art-carousel')
     let carouselNumber = 0
-    console.log(index.length);
+    console.log(index);
 
     leftBtn.addEventListener('click', () => {
         console.log('왼쪽클릭됨')
@@ -15,7 +16,7 @@ const renderCarouselButton = () => {
     })
 
     rightBtn.addEventListener('click', () => {
-        if (carouselNumber === index.length -1) {
+        if (carouselNumber === index -1) {
             carouselNumber = -1
         }
         carouselNumber += 1
