@@ -1,39 +1,74 @@
 import fetchArt from "./fetchArt.js"
-import renderCarouselButton from "./renderCarouselButton.js"
-
 await fetchArt()
-const carouselNodeList = document.querySelectorAll('.art-carousel')
-const artNodeArray = [...carouselNodeList]
-const selectedNodeArray = []
-renderCarouselButton(artNodeArray)
+
+// 캐러셀 컨테이너 DOM 취득
+const caroContainer = document.querySelector('.cont-carousel-art')
+
+// 상품을 넣고 빼는 어레이로 사용
+const nodeArray = Array.from(document.querySelectorAll('.art-carousel'))
+const pendingArray = []
 
 
-const renderCarouselEvent = (arr) => {
-    arr.forEach((e, i) => {
-            e.addEventListener('click', () => {
-                selectedNodeArray.push(arr.splice(i, 1))
-                reRender()
-            })
-        })
+// button 기능 제작 시작
+const leftBtn = document.querySelector('.btn-carousel.left')
+const rightBtn = document.querySelector('.btn-carousel.right')
+const artDisplay = document.querySelector('.cont-carousel-art')
+
+// 초기 버튼 인덱스값 설정
+let index = Array.from(document.querySelectorAll('.art-carousel')).length
+let carouCount = 0
+
+// 캐러셀 버튼 클릭 시 회전 기능
+leftBtn.addEventListener('click', () => {
+    if (carouCount === 0) return
+    carouCount -= 1
+    artDisplay.style.transform = `translateX(-${190 * carouCount}px)`
+})
+rightBtn.addEventListener('click', () => {
+    if (carouCount >= index -1) {
+        carouCount = -1
     }
+    carouCount += 1
+    artDisplay.style.transform = `translateX(-${190 * carouCount}px)`}
+)
+// button 기능 제작 완료
 
-const reRender = () => {
-    const carousel = document.querySelector('.cont-carousel-art')
-    carousel.replaceChildren()
 
-    artNodeArray.forEach(i => {
-        carousel.appendChild(i)
-        // 어짜피 새로 만들어서 뿌려줘야 할 것 같습니다.
-        // 아닙니다..
-        // 일단 푸쉬를 하고
-        // 얻은 점.
-        // 무지성으로 이벤트를 자꾸 묻히면.. 이벤트가 2~3개씩 되는거 같아요. 그래서 이벤트리스너를 삭제해주고 하던지
-        // 아니면 다시 렌더링을해서 또달아주던지 이런 방법을 구상해야될거같은데
-        // 여기서... 일단 민승님이랑 저랑 나눠서 프로그래밍을 해보고.... 구상해봅시다.
+// 화면에 렌더하는 기능
+const render = () => {
+    caroContainer.replaceChildren()
+    const docFrag = document.createDocumentFragment()
+    nodeArray.forEach((e) => {
+        const art = document.createElement('img')
+        art.classList.add('art-carousel')
+        art.src = e.dataset.imgurl
+        art.dataset.id = e.dataset.id
+        art.dataset.imgurl= e.dataset.imgurl
+        art.dataset.price = e.dataset.price
+        art.dataset.location = e.dataset.location
+        art.dataset.year = e.dataset.year
+        art.dataset.name = e.dataset.name
+        art.dataset.artist = e.dataset.artist
+        docFrag.appendChild(art)
     })
-    renderCarouselButton(artNodeArray)
-    renderCarouselEvent(artNodeArray)
+    caroContainer.appendChild(docFrag)
+    
+    const nodeEventNode = document.querySelectorAll('.art-carousel')
+    nodeEventNode.forEach((e, i) => {
+        e.addEventListener('click', () => {
+            pendingArray.push(...nodeArray.splice(i, 1))
+            if (carouCount === index - 1) {
+                artDisplay.style.transform = `translateX(-${(190 * carouCount) - 190}px)`
+                carouCount = carouCount - 1
+            }
+            index = index - 1
+            render()
+        })
+    })
 }
 
+render()
 
-renderCarouselEvent(artNodeArray)
+
+
+
