@@ -24,21 +24,28 @@ const modalArtist = document.querySelector('.artist-modal')
 const modalYear = document.querySelector('.year-modal')
 const modalInfo = document.querySelector('.info-modal')
 const modalLocation = document.querySelector('.location-modal')
-getUl.addEventListener('click', (e) => {
-    let artInfo = e.target
-    if(e.target.nodeName === "IMG" || e.target.nodeName === "SPAN") {
-        artInfo = e.path[1]
+
+// 구매한 미술품을 클릭을 했을때 일어나는 동작을 정의한 함수
+const handleClick = (e) => {
+    if(!e.target.closest("li")) {
+        return 
     }
-    if(!artInfo.classList.contains('li-cart')) return
-    modalImage.src = artInfo.dataset.imgurl
-    modalTitle.textContent = artInfo.dataset.name
-    modalArtist.textContent = artInfo.dataset.artist
-    modalYear.textContent = artInfo.dataset.year
-    modalInfo.textContent = artInfo.dataset.info
-    modalLocation.textContent = '보관장소 : ' + artInfo.dataset.location
-    modalOverlay.style.display = 'flex'
-})
+    const artInfo = e.target.closest("li").dataset;
+    setModal(artInfo);
+}
+// 이벤트 등록
+getUl.addEventListener('click', handleClick)
+
 // 모달 관련 기능
+const setModal = (dataset) =>{
+    modalImage.src = dataset.imgurl
+    modalTitle.textContent = dataset.name
+    modalArtist.textContent = dataset.artist
+    modalYear.textContent = dataset.year
+    modalInfo.textContent = dataset.info
+    modalLocation.textContent = '보관장소 : ' + dataset.location
+    modalOverlay.style.display = 'flex'
+}
 
 
 // 상품을 넣고 빼는 어레이로 사용
