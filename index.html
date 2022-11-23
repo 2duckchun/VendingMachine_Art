@@ -29,10 +29,10 @@
             </div>
             <div class="cont-buy">
                 <div class="cont-dashboard">
-                    <div class="dashboard-balance">잔액<span class="txt-balance">1000원</span></div>
+                    <div class="dashboard-balance">잔액<span class="txt-balance">2,147,483,647원</span></div>
                     <button class="btn-return">거스름돈 반환</button>
                     <label for="inp-put" class="ir">입금할 금액을 입력합니다.</label>
-                    <input id="inp-put" class="inp-put" type="number" placeholder="입금액 입력">
+                    <input id="inp-put" min="0" class="inp-put" type="number" placeholder="입금액 입력">
                     <button class="btn-put">입금</button>
                     <ul class="ul-cart balance">
                         <!-- <li class="li-cart balance">
@@ -47,7 +47,7 @@
         <section class="cont-info">
             <div class="info-mymoney">
                 소지금 :
-                <span class="txt-mymoney">100,000원</span>
+                <span class="txt-mymoney">1,000원</span>
             </div>
             <h2 class="tit-myart">구매한 작품</h2>
             <ul class="ul-cart myart">
@@ -68,6 +68,11 @@
             <span class="location-modal">네덜란드</span>
         </div>
     </section>
+    <div class="cont-cart-info">
+        <h3 class="tit-cart-info">진주 귀걸이를 한 소녀</h3>
+        <p class="artist-cart-info">다빈치</p>
+        <p class="price-cart-info">10000원</p>
+    </div>
     <script type="module" src="./src/js/app.js"></script>
 </body>
 </html>
