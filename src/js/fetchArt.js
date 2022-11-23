@@ -1,5 +1,5 @@
 const fetchArt = async () => {
-    const response = await fetch('../art.json')
+    const response = await fetch('src/js/art.json')
     let data = null
     if (response.ok) {
         data = await response.json()
