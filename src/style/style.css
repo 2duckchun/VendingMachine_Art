@@ -242,4 +242,32 @@ html {
 .cont-modal-overlay .cont-modal-main .info-modal {
   margin: 20px 0;
   line-height: 1.3em;
+}
+
+.cont-cart-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  flex-direction: column;
+  display: none;
+  font-family: "GmarketSansMedium";
+  z-index: 1;
+  width: 170px;
+  height: 80px;
+  background-color: #EEEDED;
+  border: 2px solid #3B5883;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.cont-cart-info .tit-cart-info {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.cont-cart-info .artist-cart-info {
+  font-size: 0.7em;
+}
+.cont-cart-info .price-cart-info {
+  line-height: 1.5em;
+  font-size: 0.7em;
 }/*# sourceMappingURL=style.css.map */
