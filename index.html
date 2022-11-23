@@ -29,28 +29,16 @@
             </div>
             <div class="cont-buy">
                 <div class="cont-dashboard">
-                    <div class="dashboard-balance">잔액<span class="txt-balance">1000원</span></div>
+                    <div class="dashboard-balance">잔액<span class="txt-balance">2,147,483,647원</span></div>
                     <button class="btn-return">거스름돈 반환</button>
                     <label for="inp-put" class="ir">입금할 금액을 입력합니다.</label>
-                    <input id="inp-put" class="inp-put" type="number" placeholder="입금액 입력">
+                    <input id="inp-put" min="0" class="inp-put" type="number" placeholder="입금액 입력">
                     <button class="btn-put">입금</button>
                     <ul class="ul-cart balance">
-                        <li class="li-cart balance">
+                        <!-- <li class="li-cart balance">
                             <img src="src/img/logo.png" alt="장바구니에 담긴 리스트">
-                            <span>아트밴딩머신</span>
-                        </li>
-                        <li class="li-cart balance">
-                            <img src="src/img/logo.png" alt="장바구니에 담긴 리스트">
-                            <span>아트밴딩머신</span>
-                        </li>
-                        <li class="li-cart balance">
-                            <img src="src/img/logo.png" alt="장바구니에 담긴 리스트">
-                            <span>아트밴딩머신</span>
-                        </li>
-                        <li class="li-cart balance">
-                            <img src="src/img/logo.png" alt="장바구니에 담긴 리스트">
-                            <span>아트밴딩머신</span>
-                        </li>
+                            <span>아우아아</span>
+                        </li> -->
                     </ul>
                     <button class="btn-buy">구매</button>
                 </div>
@@ -59,41 +47,32 @@
         <section class="cont-info">
             <div class="info-mymoney">
                 소지금 :
-                <span class="txt-mymoney">100,000원</span>
+                <span class="txt-mymoney">1,000원</span>
             </div>
             <h2 class="tit-myart">구매한 작품</h2>
             <ul class="ul-cart myart">
-                <li class="li-cart myart">
+                <!-- <li class="li-cart myart">
                     <img src="src/img/logo.png" alt="구매한 작품 리스트">
                     <span>아트밴딩머신</span>
-                </li>
-                <li class="li-cart myart">
-                    <img src="src/img/logo.png" alt="구매한 작품 리스트">
-                    <span>아트밴딩머신</span>
-                </li>
-                <li class="li-cart myart">
-                    <img src="src/img/logo.png" alt="구매한 작품 리스트">
-                    <span>아트밴딩머신</span>
-                </li>
-                <li class="li-cart myart">
-                    <img src="src/img/logo.png" alt="구매한 작품 리스트">
-                    <span>아트밴딩머신</span>
-                </li>
-                <li class="li-cart myart">
-                    <img src="src/img/logo.png" alt="구매한 작품 리스트">
-                    <span>아트밴딩머신</span>
-                </li>
-                <li class="li-cart myart">
-                    <img src="src/img/logo.png" alt="구매한 작품 리스트">
-                    <span>아트밴딩머신</span>
-                </li>
-                <li class="li-cart myart">
-                    <img src="src/img/logo.png" alt="구매한 작품 리스트">
-                    <span>아트밴딩머신</span>
-                </li>
+                </li> -->
             </ul>
         </section>
     </main>
+    <section class="cont-modal-overlay">
+        <div class="cont-modal-main">
+            <img class="img-modal" src="./src/img/art/girl-with-pearl.jpg">
+            <h2 class="tit-modal">진주 귀걸이를 한 소녀</h2>
+            <strong class="artist-modal">요하네스 베르메르</strong>
+            <span class="year-modal">1900</span>
+            <p class="info-modal" > 진주 귀걸이를 한 소녀 그림은 여전히 강력한 신비를 내뿜고 있다. 소녀의 표정에 사로잡혀 소설을 썼지만, 나는 아직도 그녀가 무슨 생각을 하고 있는지 모른다. 결코 알지 못하기를 바란다. -트레이시 슈발리에-</p>
+            <span class="location-modal">네덜란드</span>
+        </div>
+    </section>
+    <div class="cont-cart-info">
+        <h3 class="tit-cart-info">진주 귀걸이를 한 소녀</h3>
+        <p class="artist-cart-info">다빈치</p>
+        <p class="price-cart-info">10000원</p>
+    </div>
     <script type="module" src="./src/js/app.js"></script>
 </body>
 </html>

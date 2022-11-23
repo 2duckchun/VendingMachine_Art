@@ -13,8 +13,8 @@ const fetchArt = async () => {
 
     data.forEach(i => {
         const art = document.createElement('img')
-        art.src=`${i.파일위치}`
         art.classList.add('art-carousel')
+        art.src=`${i.파일위치}`
         art.dataset.id =`${i.id}`
         art.dataset.imgurl=`${i.파일위치}`
         art.dataset.price =`${i.가격}`
@@ -22,6 +22,7 @@ const fetchArt = async () => {
         art.dataset.year =`${i.연도}`
         art.dataset.name =`${i.이름}`
         art.dataset.artist =`${i.작가}`
+        art.dataset.info = `${i.설명}`
         docFrag.appendChild(art)
     })
     carousel.appendChild(docFrag)

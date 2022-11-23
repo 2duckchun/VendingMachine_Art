@@ -199,4 +199,75 @@ html {
 }
 .ul-cart li + li {
   margin-top: 6px;
+}
+
+.cont-modal-overlay {
+  font-family: "GmarketSansMedium";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 5px 30px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.cont-modal-overlay .cont-modal-main {
+  margin: 0 auto;
+  background-color: #EEEDED;
+  border: 10px inset #5F3A22;
+  border-radius: 5px;
+  width: 400px;
+  padding: 30px;
+  text-align: center;
+}
+.cont-modal-overlay .cont-modal-main .tit-modal {
+  font-size: 24px;
+  margin: 13px 0;
+}
+.cont-modal-overlay .cont-modal-main .artist-modal {
+  display: block;
+  margin: 5px 0;
+}
+.cont-modal-overlay .cont-modal-main .year-modal {
+  display: block;
+}
+.cont-modal-overlay .cont-modal-main .info-modal {
+  margin: 20px 0;
+  line-height: 1.3em;
+}
+
+.cont-cart-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  flex-direction: column;
+  display: none;
+  font-family: "GmarketSansMedium";
+  z-index: 1;
+  width: 170px;
+  height: 80px;
+  background-color: #EEEDED;
+  border: 2px solid #3B5883;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.cont-cart-info .tit-cart-info {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.cont-cart-info .artist-cart-info {
+  font-size: 0.7em;
+}
+.cont-cart-info .price-cart-info {
+  line-height: 1.5em;
+  font-size: 0.7em;
 }/*# sourceMappingURL=style.css.map */
