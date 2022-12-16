@@ -9,6 +9,10 @@
 * 미술작품을 캐러셀로 구경할 수 있고, 구매 시 그림에 대한 상세한 설명을 모달창으로 볼 수 있습니다.
 * 멋쟁이사자처럼 프론트엔드 3기 페어 프로그래밍으로 진행했습니다.
 
+## 팀원
+* FE 김태수 <a href="https://github.com/2duckchun">🔗 Github</a>
+* FE 김민승 <a href="https://github.com/rosamondkim">🔗 Github</a>
+
 ## 개발 툴 
 * HTML / Sass / Vanilia JS
 
@@ -27,7 +31,13 @@
 * 이미 선택된 그림은 캐러셀 리스트에서 제거되고, 취득을 취소한다면 캐러셀 리스트에 다시 복귀함
  
 ## 메인 기능
-(동영상)
+|캐러셀 기능|선택 취소 기능|
+|:---:|:---:|
+|<img width="80%" src="https://user-images.githubusercontent.com/96304623/208023216-b5081a89-a594-4d4a-a539-b9fc2f4cf65c.gif"/>|<img width="80%" src="https://user-images.githubusercontent.com/96304623/208024102-a1cbe166-0aad-4f02-88b3-846958a6eb5b.gif"/>|
+
+|계산 기능|구매 후 모달 기능|
+|:---:|:---:|
+|<img width="80%" src="https://user-images.githubusercontent.com/96304623/208025624-3f57c070-9649-4e45-9850-0718cba1bc87.gif"/>|<img width="80%" src="https://user-images.githubusercontent.com/96304623/208023486-582a01c7-37fe-40db-8fcf-7f209afdcc29.gif"/>|
 
 
 ## 이슈
@@ -50,8 +60,4 @@
   - 초기 설계에서 웹사이트 구축 후에 반응형으로 수정하고자 했으나, Html, css에 구조적 결함이 있다는 것을 알게되었습니다.
   - UX 디자인을 할 때 적용되는 Mobile first의 개념을 반응형 도입 실패를 통해 깨달았습니다.
   
-  
-
-
-
 
